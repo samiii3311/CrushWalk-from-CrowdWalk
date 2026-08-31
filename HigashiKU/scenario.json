@@ -1,0 +1,8 @@
+[
+  {"atTime":"20:30:00","type":"Initiate"},
+  {"atTime":"20:30:00","type":"AddTag","placeTag":"OpenFrom21:00","noticeTag":"ROAD-CLOSED"},
+  {"atTime":"20:30:01","type":"Ruby","rubyClass":"RecalculatePathEventv2","name":"ForceRecalcEvent","args":{"label":"ForceRecalcAfterClosing"}},
+  {"atTime":"21:00:00","type":"RemoveTag","placeTag":"OpenFrom21:00","noticeTag":"ROAD-CLOSED"},
+  {"atTime":"21:00:01","type":"Ruby","rubyClass":"RecalculatePathEventv2","name":"ForceRecalcEvent","args":{"label":"ForceRecalcAfterOpening"}},
+  {"atTime":"24:15:00","type":"Finish"}
+]

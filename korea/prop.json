@@ -1,0 +1,41 @@
+{
+    "map_file": "Map.xml",
+    "generation_file": "gen.json",
+    "scenario_file": "scenario.json",
+    "agent_appearance_file": "agent_appearance.json",
+    // "crushed_agents_log_dir": "/mnt/ssd_2tb/log0507",
+    // "dynamic_logging": {
+    //     "file": "/mnt/ssd_2tb/log0507/radius_test_0.5.csv",
+    //     "fields": [
+    //         "p_acc",
+    //         "compression",
+    //         "is_near_limit"
+    //     ]
+    // },
+
+    // #If agents:
+    //   # die too fast → increase @pressure_threshold
+    //   # never die → increase @compression_gain
+    //   # feel too soft → increase @body_radius
+    "pressure_threshold": 10.0,
+    "body_radius": 0.5,
+    "recovery_rate": 0.8,
+    "compression_gain": 0.1,
+    "personal_space_radius": 1.2,
+    "firmness": 0.8,
+    "simulation_step_time": 1,
+    "show_background_map": true,
+    "agent_size": 5.0,
+    "loop_count": 1,
+    "use_ruby": true,
+    "ruby_load_path": ".",
+    "ruby_init_script": [
+        "require 'SpaceForceAgent.rb'",
+        "require 'PhysicalAgent.rb'",
+        "require 'RubyColorBase.rb'",
+        "require 'CrushColor.rb'",
+        "require 'GhostAgentManager.rb'",
+        "require 'TelemetryHandler.rb'",
+        "require 'PreCrush.rb'"
+    ]
+}

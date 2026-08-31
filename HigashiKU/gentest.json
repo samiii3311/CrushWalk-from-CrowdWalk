@@ -1,0 +1,8 @@
+#{ "version" : 2}
+
+[
+    {"rule": "RANDOM", "agentType": {"className": "BustleAgent"}, "speedModel": "CROSSING", "startPlace": "Park", "goal": "JR-Kashii", "duration": 3600, "total": 50000, "startTime": "20:30:00"},
+    {"rule": "RANDOM", "agentType": {"className": "BustleAgent"}, "speedModel": "CROSSING", "startPlace": "Path", "goal": "JR-Kashii", "duration": 3600, "total": 1000, "startTime": "20:30:00"},
+    {"rule": "RANDOM", "agentType": {"className": "BustleAgent"}, "speedModel": "CROSSING", "startPlace": "PaidSeat", "goal": "JR-Kashii", "duration": 3600, "total": 6000, "startTime": "20:30:00"}
+
+]

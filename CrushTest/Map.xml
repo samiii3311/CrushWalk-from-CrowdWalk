@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group defaultHeight="0.0" id="_p00000" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+  <tag>root</tag>
+  <Group defaultHeight="0.0" id="_p00001" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+    <tag>Tesy</tag>
+    <Node height="0.0" id="_p00002" x="190.00000000000006" y="110.0">
+      <link id="_p00009"/>
+    </Node>
+    <Node height="0.0" id="_p00003" x="189.00000000000006" y="491.0">
+      <link id="_p00009"/>
+      <link id="_p00010"/>
+    </Node>
+    <Node height="0.0" id="_p00004" x="401.00000000000006" y="101.0">
+      <link id="_p00013"/>
+    </Node>
+    <Node height="0.0" id="_p00005" x="407.00000000000006" y="480.0">
+      <link id="_p00010"/>
+      <link id="_p00011"/>
+      <link id="_p00013"/>
+    </Node>
+    <Node height="0.0" id="_p00006" x="649.0" y="82.0">
+      <link id="_p00015"/>
+    </Node>
+    <Node height="0.0" id="_p00007" x="654.0" y="483.0">
+      <link id="_p00011"/>
+      <link id="_p00012"/>
+      <link id="_p00015"/>
+    </Node>
+    <Node height="0.0" id="_p00008" x="840.0" y="475.0">
+      <tag>exit</tag>
+      <link id="_p00012"/>
+    </Node>
+    <Link from="_p00002" id="_p00009" length="381.00131233369785" to="_p00003" width="5.0">
+      <tag>Spawn</tag>
+    </Link>
+    <Link from="_p00003" id="_p00010" length="218.27734651126764" to="_p00005" width="7.0"/>
+    <Link from="_p00005" id="_p00011" length="247.018217951632" to="_p00007" width="7.0"/>
+    <Link from="_p00007" id="_p00012" length="186.17196351760379" to="_p00008" width="1.0"/>
+    <Link from="_p00004" id="_p00013" length="379.0474904283103" to="_p00005" width="5.0">
+      <tag>Spawn</tag>
+    </Link>
+    <Link from="_p00006" id="_p00015" length="401.03117085832616" to="_p00007" width="5.0">
+      <tag>Spawn</tag>
+    </Link>
+  </Group>
+</Group>

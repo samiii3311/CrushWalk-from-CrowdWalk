@@ -1,0 +1,92 @@
+#{ "version" : 2}
+[
+  {"rule": "RANDOM", "agentType": {"className": "RationalAgent", "config": {"accelerationOfRecoveringHeadAgent":0.02,  "weight": 100, "margin": 200.0, "trail": 0.0,"personalSpace":0.7, "A_1":0.2,"rule": {
+        "type": "if",
+        "condition": {
+          "type": "lessThan",
+          "arg0": {"type": "agentSpeed"},
+          "arg1": 0.1
+        },
+        "then": {
+          "type": "if",
+          "condition": {"type": "prob", "value": 0.01},
+          "then": [
+            {"type": "setTurnAround"},
+            {"type": "changeGoal", "goal": "alternative_exit"}
+          ]
+        }}
+    }}, "startTime": "20:47:04", "total": 1372, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "RationalAgent", "config": {"accelerationOfRecoveringHeadAgent":0.02,  "weight": 100, "margin": 200.0, "trail": 0.0,"personalSpace":0.7, "A_1":0.2},"rule": {
+        "type": "if",
+        "condition": {
+          "type": "lessThan",
+          "arg0": {"type": "agentSpeed"},
+          "arg1": 0.1
+        },
+        "then": {
+          "type": "if",
+          "condition": {"type": "prob", "value": 0.01},
+          "then": [
+            {"type": "setTurnAround"},
+            {"type": "changeGoal", "goal": "alternative_exit"}
+          ]
+        }
+      }
+    }, "startTime": "20:42:53", "total": 517, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "RationalAgent", "config": {"accelerationOfRecoveringHeadAgent":0.02,  "weight": 100, "margin": 200.0, "trail": 0.0,"personalSpace":0.7, "A_1":0.2},"rule": {
+        "type": "if",
+        "condition": {
+          "type": "lessThan",
+          "arg0": {"type": "agentSpeed"},
+          "arg1": 0.1
+        },
+        "then": {
+          "type": "if",
+          "condition": {"type": "prob", "value": 0.01},
+          "then": [
+            {"type": "setTurnAround"},
+            {"type": "changeGoal", "goal": "alternative_exit"}
+          ]
+        }
+      }
+    }, "startTime": "21:25:55", "total": 256, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "RationalAgent", "config": {"accelerationOfRecoveringHeadAgent":0.02,  "weight": 100, "margin": 200.0, "trail": 0.0,"personalSpace":0.7, "A_1":0.2},"rule": {
+        "type": "if",
+        "condition": {
+          "type": "lessThan",
+          "arg0": {"type": "agentSpeed"},
+          "arg1": 0.1
+        },
+        "then": {
+          "type": "if",
+          "condition": {"type": "prob", "value": 0.01},
+          "then": [
+            {"type": "setTurnAround"},
+            {"type": "changeGoal", "goal": "alternative_exit"}
+          ]
+        }
+      }
+    }, "startTime": "21:11:05", "total": 1300, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "RationalAgent", "config": {"accelerationOfRecoveringHeadAgent":0.02,  "weight": 100, "margin": 200.0, "trail": 0.0,"personalSpace":0.7, "A_1":0.2},"rule": {
+        "type": "if",
+        "condition": {
+          "type": "lessThan",
+          "arg0": {"type": "agentSpeed"},
+          "arg1": 0.1
+        },
+        "then": {
+          "type": "if",
+          "condition": {"type": "prob", "value": 0.01},
+          "then": [
+            {"type": "setTurnAround"},
+            {"type": "changeGoal", "goal": "alternative_exit"}
+          ]
+        }
+      }
+    }, "startTime": "21:12:38", "total": 262, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "NaiveAgent"}, "startTime": "21:22:33", "total": 423, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "NaiveAgent"}, "startTime": "20:43:49", "total": 105, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "NaiveAgent"}, "startTime": "21:24:26", "total": 58, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "NaiveAgent"}, "startTime": "20:52:14", "total": 430, "duration": 300, "startPlace": "Spawn", "goal": "exit"},
+  {"rule": "RANDOM", "agentType": {"className": "NaiveAgent"}, "startTime": "20:39:46", "total": 47, "duration": 300, "startPlace": "Spawn", "goal": "exit"}
+]

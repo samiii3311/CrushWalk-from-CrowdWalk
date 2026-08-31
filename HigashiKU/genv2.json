@@ -1,0 +1,201 @@
+#{ "version" : 2}
+[
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":95,
+    "goal":"JR香椎駅"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":10.0,"trail":100.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":5,
+    "goal":"JR香椎駅",
+    "condition":["weight10"]
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":95,
+    "goal":"JR-Chihaya"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":10.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":5,
+    "goal":"JR-Chihaya",
+    "condition":["weight10"]
+},{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"20:00:01",
+    "duration":60,
+    "total":950,
+    "goal":"EXIT_STATION"
+},{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"20:45:01",
+    "duration":60,
+    "total":950,
+    "goal":"EXIT_STATION"
+},{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"21:30:01",
+    "duration":60,
+    "total":950,
+    "goal":"EXIT_STATION"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":3.0,"trail":10.0}},
+
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":950,
+    "goal":"EXIT_STATION"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":10.0,"trail":100.0}},
+    // "agentType":{"className": "RationalAgent","config":{"weight":10.0,"trail":10.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"自由席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":5,
+    "goal":"EXIT_STATION",
+    "condition":["weight10"]
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"有料席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":25,
+    "goal":"EXIT_STATION"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"有料席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":50,
+    "goal":"JR香椎駅"
+},
+{
+    "rule":"EACH",
+    "agentType":{"className": "RationalAgent","rule": { 
+        "type": "ThinkRule",
+        "rules": [
+            {"test": {"listenAlert": "replan"}, "action": {"clearPlannedRoute": []}},
+            {"test": {"true": []}, "action": {"go": []}}
+        ]
+    },"config":{"weight":3.0,"trail":100.0}},
+    "speedModel":"CROSSING",
+    "startPlace":"有料席",
+    "startTime":"18:00:01",
+    "duration":60,
+    "total":50,
+    "goal":"JR-Chihaya"
+}
+]

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group defaultHeight="0.0" id="_p00000" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+  <tag>root</tag>
+  <Group defaultHeight="0.0" id="_p00001" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+    <tag>ground</tag>
+    <Node height="0.0" id="_p00002" x="244.80000000000004" y="303.19999999999993">
+      <tag>end</tag>
+      <link id="_p00004"/>
+    </Node>
+    <Node height="0.0" id="_p00003" x="313.6" y="304.79999999999995">
+      <link id="_p00004"/>
+      <link id="_p00006"/>
+    </Node>
+    <Link from="_p00002" id="_p00004" length="68.818602136341" to="_p00003" width="1.0"/>
+    <Node height="0.0" id="_p00005" x="485.6" y="300.79999999999995">
+      <link id="_p00006"/>
+      <link id="_p00010"/>
+      <link id="_p00016"/>
+      <link id="_p00018"/>
+    </Node>
+    <Link from="_p00003" id="_p00006" length="172.04650534085255" to="_p00005" width="1.0"/>
+    <Node height="0.0" id="_p00007" x="488.80000000000007" y="94.4">
+      <tag>enter</tag>
+      <tag>end</tag>
+      <link id="_p00009"/>
+    </Node>
+    <Node height="0.0" id="_p00008" x="490.40000000000003" y="159.2">
+      <link id="_p00009"/>
+      <link id="_p00010"/>
+    </Node>
+    <Link from="_p00007" id="_p00009" length="64.81975007665486" to="_p00008" width="1.0"/>
+    <Link from="_p00008" id="_p00010" length="141.6813325741962" to="_p00005" width="1.0"/>
+    <Node height="0.0" id="_p00011" x="711.2" y="294.3999999999999">
+      <tag>enter</tag>
+      <tag>end</tag>
+      <link id="_p00015"/>
+    </Node>
+    <Node height="0.0" id="_p00012" x="630.4000000000001" y="292.79999999999995">
+      <link id="_p00015"/>
+      <link id="_p00016"/>
+    </Node>
+    <Node height="0.0" id="_p00013" x="496.00000000000006" y="562.4">
+      <tag>end</tag>
+      <link id="_p00017"/>
+    </Node>
+    <Node height="0.0" id="_p00014" x="497.6" y="483.20000000000005">
+      <link id="_p00017"/>
+      <link id="_p00018"/>
+    </Node>
+    <Link from="_p00011" id="_p00015" length="80.81584003151853" to="_p00012" width="1.0"/>
+    <Link from="_p00012" id="_p00016" length="145.02082609059988" to="_p00005" width="1.0"/>
+    <Link from="_p00013" id="_p00017" length="79.2161599675217" to="_p00014" width="1.0"/>
+    <Link from="_p00014" id="_p00018" length="182.79431063356438" to="_p00005" width="1.0"/>
+  </Group>
+</Group>

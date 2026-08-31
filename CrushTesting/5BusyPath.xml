@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group defaultHeight="0.0" id="_p00000" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+  <tag>root</tag>
+  <Group defaultHeight="0.0" id="_p00001" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="1.0" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+    <tag>ground</tag>
+    <Node height="0.0" id="_p00003" x="157.60000000000002" y="283.19999999999993">
+      <tag>enter</tag>
+      <tag>end</tag>
+      <link id="_p00005"/>
+    </Node>
+    <Node height="0.0" id="_p00004" x="272.8" y="287.99999999999994">
+      <link id="_p00005"/>
+      <link id="_p00007"/>
+    </Node>
+    <Link from="_p00003" id="_p00005" length="115.29995663485741" to="_p00004" width="1.0"/>
+    <Node height="0.0" id="_p00006" x="568.0000000000001" y="293.59999999999997">
+      <link id="_p00007"/>
+      <link id="_p00009"/>
+    </Node>
+    <Link from="_p00004" id="_p00007" length="295.25311175328886" to="_p00006" width="1.0"/>
+    <Node height="0.0" id="_p00008" x="700.8000000000001" y="290.3999999999999">
+      <tag>enter</tag>
+      <tag>end</tag>
+      <link id="_p00009"/>
+    </Node>
+    <Link from="_p00006" id="_p00009" length="132.838548622002" to="_p00008" width="1.0"/>
+  </Group>
+</Group>

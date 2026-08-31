@@ -1,0 +1,19 @@
+[
+  {
+    "tag": "*",
+    "model": {
+      "className": "RubyColorModel",
+      "parameters": {
+        "rubyColorClass": "CrushColor"
+      }
+    },
+    "2D_View": {
+      "className": "RoundAgent",
+      "parameters": {}
+    },
+    "3D_View": {
+      "className": "SphereAgent",
+      "parameters": {}
+    }
+  }
+]
