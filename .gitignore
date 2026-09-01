@@ -1,20 +1,21 @@
 # Ignore everything by default
 *
 
-# Allow directories to be traversed
+# Allow directory traversal
 !*/
 
-# Allow only Crush folders and their contents
+# Whitelist only folders with "crush" or "Crush"
 !*[Cc]rush*/**
 !*[Cc]rush*
 
-# Allow top-level simulation scripts and config
+# Whitelist root-level config & scripts
 !*.json
 !*.rb
 !*.py
 !.gitignore
+!*.xml
 
-# Explicitly exclude build directories, caches, and crash logs
+# Explicit exclusions
 build/**
 bin/**
 __pycache__/**

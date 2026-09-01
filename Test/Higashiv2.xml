@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group defaultHeight="0.0" id="_p00000" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="0.06736935954039037" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+  <tag>root</tag>
+  <Group defaultHeight="0.0" id="_p00001" imageFileName="" maxHeight="5.0" minHeight="-5.0" pNorthWestX="5.0" pNorthWestY="45.0" pSouthEastX="600.0" pSouthEastY="600.0" pTheta="0.0" r="0.0" scale="0.06736935954039037" sx="1.0" sy="1.0" tx="0.0" ty="0.0" zone="0">
+    <tag>ground</tag>
+    <Node height="0.0" id="_p00003" x="-1678.811667013229" y="-721.4791869092923">
+      <link id="_p00010"/>
+      <link id="_p00013"/>
+      <link id="_p00017"/>
+    </Node>
+    <Node height="0.0" id="_p00004" x="-938.9181279078398" y="575.2414486362351">
+      <link id="_p00010"/>
+      <link id="_p00015"/>
+      <link id="_p00016"/>
+    </Node>
+    <Node height="0.0" id="_p00005" x="-527.0186319110252" y="-65.49110069214316">
+      <link id="_p00014"/>
+      <link id="_p00015"/>
+    </Node>
+    <Node height="0.0" id="_p00006" x="-99.86359902543975" y="-652.8292709098232">
+      <link id="_p00013"/>
+      <link id="_p00014"/>
+      <link id="_p00012"/>
+    </Node>
+    <Node height="0.0" id="_p00007" x="-2945.0212287812146" y="445.5693850816823">
+      <link id="_p00017"/>
+      <link id="_p00018"/>
+    </Node>
+    <Node height="0.0" id="_p00008" x="-1671.1838985688435" y="1490.5736619624897">
+      <link id="_p00016"/>
+      <link id="_p00018"/>
+      <link id="_p00019"/>
+      <link id="_p00020"/>
+    </Node>
+    <Node height="0.0" id="_p00009" x="-527.0186319110252" y="2337.2559592892753">
+      <tag>exit</tag>
+      <link id="_p00019"/>
+    </Node>
+    <Link from="_p00004" id="_p00010" length="100.57969797154978" to="_p00003" width="5.0">
+      <tag>Spawn</tag>
+      <tag>1</tag>
+    </Link>
+    <Link from="_p00003" id="_p00013" length="106.47321394126254" to="_p00006" width="5.0">
+      <tag>Spawn</tag>
+      <tag>3</tag>
+    </Link>
+    <Link from="_p00006" id="_p00014" length="48.92646331625281" to="_p00005" width="5.0">
+      <tag>Spawn</tag>
+      <tag>4</tag>
+    </Link>
+    <Link from="_p00005" id="_p00015" length="51.31579414893051" to="_p00004" width="5.0">
+      <tag>Spawn</tag>
+      <tag>5</tag>
+    </Link>
+    <Link from="_p00004" id="_p00016" length="78.97017300826978" to="_p00008" width="5.0"/>
+    <Link from="_p00007" id="_p00017" length="116.01013539894434" to="_p00003" width="3.0"/>
+    <Link from="_p00007" id="_p00018" length="111.0" to="_p00008" width="30.0"/>
+    <Link from="_p00008" id="_p00019" length="95.89159422955325" to="_p00009" width="30.0">
+      <tag>ONE-WAY-FORWARD</tag>
+    </Link>
+    <Node height="0.0" id="_p00002" x="279.5620824495343" y="-2049.7063648638878">
+      <tag>exit2</tag>
+      <link id="_p00012"/>
+    </Node>
+    <Link from="_p00006" id="_p00012" length="97.51652458291868" to="_p00002" width="10.0"/>
+    <Node height="0.0" id="_p00011" x="-3038.81383816502" y="3184.3476590667983">
+      <link id="_p00020"/>
+    </Node>
+    <Link from="_p00011" id="_p00020" length="146.66236856405519" to="_p00008" width="5.0">
+      <tag>Spawn</tag>
+    </Link>
+  </Group>
+</Group>
