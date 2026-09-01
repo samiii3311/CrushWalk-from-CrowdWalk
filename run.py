@@ -111,5 +111,3 @@ if __name__ == "__main__":
     
     plt.savefig(f"{BASE_LOG_DIR}/radius_vs_pressure.png")
     print(f"finish")
-
-    # 
