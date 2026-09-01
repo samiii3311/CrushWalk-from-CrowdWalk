@@ -1,7 +1,0 @@
-{
-   foo: {
-   	diameter: 5.0,
-   	color: "PINK",
-	transparency: 0.2
-   }
-}
