@@ -80,7 +80,7 @@ This automatically locates CrowdWalk files, generates `DynamicAgentLogger.java`,
 
 ---
 
-## 🔬 Running Simulations
+## Running Simulations
 
 ### Running a Single Experiment
 
