@@ -2,7 +2,7 @@
 """
 patch_crowdwalk.py
 Auto-discovers target Java files, writes DynamicAgentLogger.java,
-injects custom research hooks, and compiles with Gradle.
+injects custom research hooks, fixes quickstart double-launch, and compiles with Gradle.
 """
 
 import os
@@ -43,7 +43,7 @@ def patch_file(filename: str, search: str, replace: str, marker: str = None) -> 
     replace_norm = replace.replace("\r\n", "\n")
     check_marker = (marker or replace_norm).strip()
 
-    if check_marker in content:
+    if marker and check_marker in content and search_norm not in content:
         print(f"[*] Already patched: {filename}")
         return True
 
@@ -421,6 +421,23 @@ def apply_patches():
         search="finished = simulator.updateEveryTick();",
         replace=launcher_check,
         marker="agentHandler.numOfCrushed() + agentHandler.numOfEvacuatedAgents()",
+    )
+
+    # 6. quickstart.sh (Remove duplicate launch command)
+    double_launch = """echo "$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*"
+$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*
+
+echo "$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*"
+$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*"""
+
+    single_launch = """echo "$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*"
+$JAVA $JAVAOPT -Djdk.gtk.version=2 -jar $JAR $*"""
+
+    patch_file(
+        "quickstart.sh",
+        search=double_launch,
+        replace=single_launch,
+        marker=single_launch,
     )
 
 
