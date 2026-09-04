@@ -123,7 +123,6 @@ The addon logs agent metrics to CSV for analysis:
 
 
 # Notes
+*Work in Progress: This repository is actively under development as of September 4th 2026.
 
-* This repository is still being built
-
-* This Readme and the code in the repository was written with the help of AI
+*AI Assistance: Portions of the code and documentation in this repository were developed with AI assistance.
