@@ -87,7 +87,6 @@ This automatically locates CrowdWalk files, generates `DynamicAgentLogger.java`,
 Execute any benchmark configuration using CrowdWalk's launcher:
 
 ```bash
-# Example: Run CrushTesting Benchmark
 sh quickstart.sh ./CrushTesting/prop.json -g2
 
 ```
